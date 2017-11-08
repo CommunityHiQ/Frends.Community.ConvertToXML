@@ -33,6 +33,9 @@
     <DocumentationFile>bin\Release\Frends.Community.ConvertToXML.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Frends.Tasks.Attributes, Version=1.2.0.0, Culture=neutral, PublicKeyToken=258fd606323928fc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Frends.Tasks.Attributes.1.2.0\lib\net40\Frends.Tasks.Attributes.dll</HintPath>
+    </Reference>
     <Reference Include="GenericParsing, Version=1.1.5.29274, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GenericParser.1.1.5\lib\net20\GenericParsing.dll</HintPath>
     </Reference>

@@ -3,6 +3,8 @@
   - [Contributing](#contributing)
   - [Documentation](#documentation)
     - [Parameters](#parameters)
+    - [CsvInputParameters](#csvinputparameters)
+    - [JsonInputParameters](#jsoninputparameters)
     - [Options](#options)
     - [Result](#result)
   - [License](#license)
@@ -27,13 +29,24 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ### Parameters
 
 | Property				|  Type   | Description								| Example                     |
-|-----------------------|---------|-------------------------------------------|-----------------------------|
+|-----------------------|---------|-----------------------------------------|-----------------------------|
 | Input					| string	| Supported formats JSON, CSV and fixed length | ´first;second;third´ |
-| XMLRootElementName	| string	| Root name for when parsing JSON| ´Root´ |
+
+### CsvInputParameters
+
+| Property				|  Type   | Description								| Example                     |
+|-----------------------|---------|-----------------------------------------|-----------------------------|
 | CSVSeparator			| CSVSeparator	| CSV separator	| ´;´ |
 | ColumnLengths			| array<int>	| Column lengths of fixed lenght input	| ´5, 6, 5´ |
 | InputHasHeaderRow		| bool	| Input has header row	| ´true´ |
 | TrimOuputColumns		| bool	| Trim ouput columns of CVS input	| ´true´ |
+
+### jsonInputParameters
+
+| Property				|  Type   | Description								| Example                     |
+|-----------------------|---------|-----------------------------------------|-----------------------------|
+| XMLRootElementName	| string	| Root name for when parsing JSON| ´Root´	|
+| AppendWith			| string	| Append numeric JSON fields with prefix	| ´foo_´ |
 
 ### Result
 
