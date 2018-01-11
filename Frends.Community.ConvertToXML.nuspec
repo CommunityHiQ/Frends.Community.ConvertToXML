@@ -17,5 +17,6 @@
   </metadata>
   <files>
     <file src="Frends.Community.ConvertToXML\bin\Release\Frends.Community.ConvertToXML.dll" target="lib\net452\Frends.Community.ConvertToXML.dll" />
+    <file src="Frends.Community.ConvertToXML\bin\Release\Frends.Community.ConvertToXML.xml" target="lib\net452\Frends.Community.ConvertToXML.xml" />
   </files>
 </package>
