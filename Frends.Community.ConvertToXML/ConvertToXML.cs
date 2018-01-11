@@ -8,80 +8,81 @@ using Newtonsoft.Json.Linq;
 using Frends.Tasks.Attributes;
 
 namespace Frends.Community.ConvertToXML
-{    /// <summary>
-     /// SubmitForm
-     /// </summary>
-    public static class ConvertData
+{
+    /// <summary>
+    /// Column
+    /// </summary>
+    public class Column
     {
         /// <summary>
-        /// Column
+        /// Column length
         /// </summary>
-        public class Column
-        {
-            /// <summary>
-            /// Column length
-            /// </summary>
-            public int Length { set; get; }
-        }
+        public int Length { set; get; }
+    }
 
+    /// <summary>
+    /// Json input parameters
+    /// </summary>
+    public class JsonInputParameters
+    {
         /// <summary>
-        /// Json input parameters
+        /// XML root element name
         /// </summary>
-        public class JsonInputParameters
-        {
-            /// <summary>
-            /// XML root element name
-            /// </summary>
-            public string XMLRootElementName { get; set; }
-            /// <summary>
-            /// Json change numeric keys
-            /// </summary>
-            public string AppendToFieldName { get; set; }
-        }
+        public string XMLRootElementName { get; set; }
         /// <summary>
-        /// Csv input parameters
+        /// Json change numeric keys
         /// </summary>
-        public class CsvInputParameters
-        {
-            /// <summary>
-            /// CSV separator
-            /// </summary>
-            public string CSVSeparator { get; set; }
-            /// <summary>
-            /// Output column lengths
-            /// </summary>
-            public Column[] ColumnLengths { get; set; }
-            /// <summary>
-            /// Input has header row
-            /// </summary>
-            public bool InputHasHeaderRow { get; set; }
-            /// <summary>
-            /// Trim ouput columns
-            /// </summary>
-            public bool TrimOuputColumns { get; set; }
-        }
+        public string AppendToFieldName { get; set; }
+    }
+    /// <summary>
+    /// Csv input parameters
+    /// </summary>
+    public class CsvInputParameters
+    {
         /// <summary>
-        /// Parameters for file appearing
+        /// CSV separator
         /// </summary>
-        public class Parameters
-        {
-            /// <summary>
-            /// Input data. Supported formats JSON, CSV and fixed length
-            /// </summary>
-            public string Input { get; set; }
-        }
+        public string CSVSeparator { get; set; }
+        /// <summary>
+        /// Output column lengths
+        /// </summary>
+        public Column[] ColumnLengths { get; set; }
+        /// <summary>
+        /// Input has header row
+        /// </summary>
+        public bool InputHasHeaderRow { get; set; }
+        /// <summary>
+        /// Trim ouput columns
+        /// </summary>
+        public bool TrimOuputColumns { get; set; }
+    }
+    /// <summary>
+    /// Parameters for file appearing
+    /// </summary>
+    public class Parameters
+    {
+        /// <summary>
+        /// Input data. Supported formats JSON, CSV and fixed length
+        /// </summary>
+        public string Input { get; set; }
+    }
 
+    /// <summary>
+    /// Return object
+    /// </summary>
+    public class Output
+    {
         /// <summary>
-        /// Return object
+        /// Result string
         /// </summary>
-        public class Output
-        {
-            /// <summary>
-            /// Result string
-            /// </summary>
-            public string Result { get; set; }
-        }
+        public string Result { get; set; }
+    }
 
+    /// <summary>
+    /// SubmitForm
+    /// </summary>
+    public static class ConvertData
+    {
         /// <summary>
         /// Parse input to xml
         /// </summary>
