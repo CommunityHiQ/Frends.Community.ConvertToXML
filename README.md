@@ -37,7 +37,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 | Property				|  Type   | Description								| Example                     |
 |-----------------------|---------|-----------------------------------------|-----------------------------|
 | CSVSeparator			| CSVSeparator	| CSV separator	| `;` |
-| ColumnLengths			| array&lt;int&gt;	| Column lengths of fixed lenght input. These are used if CSV separator is not defined.	| `` |
+| ColumnLengths			| array&lt;int&gt;	| Column lengths of fixed lenght input. These are used if CSV separator is not defined.	|  |
 | InputHasHeaderRow		| bool	| Input has header row	| `false` |
 | TrimOuputColumns		| bool	| Trim ouput columns of CVS input	| `true` |
 
