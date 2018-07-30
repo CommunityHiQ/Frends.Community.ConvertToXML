@@ -51,7 +51,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ### Result
 
 | Property      | Type     | Description                      | Example                     |
-|---------------|----------|----------------------------------|
+|---------------|----------|----------------------------------|-----------------------------|
 | Result        | string   | Result as XML	| `<NewDataSet><Table1><Column1>first</Column1><Column2>second</Column2><Column3>third</Column3></Table1></NewDataSet>` |
 
 ## License
