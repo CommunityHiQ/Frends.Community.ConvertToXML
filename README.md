@@ -8,6 +8,7 @@
     - [Options](#options)
     - [Result](#result)
   - [License](#license)
+  - [Change Log](#change-log)
 
 
 # Frends.Community.ConvertToXML
@@ -57,3 +58,10 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details
+
+# Change Log
+
+| Version             | Changes                 |
+| ---------------------| ---------------------|
+| 1.0.0 | Initial version of ConvertToXML |
+| 1.2.0 | Task no longer use Frends.Task.Attributes|
