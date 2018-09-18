@@ -5,7 +5,6 @@ using System.IO;
 using Newtonsoft.Json;
 using GenericParsing;
 using Newtonsoft.Json.Linq;
-using Frends.Tasks.Attributes;
 
 namespace Frends.Community.ConvertToXML
 {
@@ -87,7 +86,7 @@ namespace Frends.Community.ConvertToXML
         /// Parse input to xml
         /// </summary>
         /// <returns>Object {string Result }  </returns>
-        public static Output ConvertToXML(Parameters parameters, [CustomDisplay(DisplayOption.Tab)] CsvInputParameters csvInputParameters, [CustomDisplay(DisplayOption.Tab)] JsonInputParameters jsonInputParameters)
+        public static Output ConvertToXML(Parameters parameters, [PropertyTab] CsvInputParameters csvInputParameters, [PropertyTab] JsonInputParameters jsonInputParameters)
         {
             if (parameters.Input.GetType() != typeof(string))
                 throw new InvalidDataException("The input data string was not in correct format. Supported formats are JSON, CSV and fixed length.");
