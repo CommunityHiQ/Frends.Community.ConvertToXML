@@ -1,3 +1,5 @@
+This repository is archived and the tasks have been moved to https://github.com/CommunityHiQ/Frends.Community.Xml
+
 **[Table of Contents](http://tableofcontent.eu)**
 - [Frends.Community.ConvertToXML](#frendscommunityconverttoxml)
   - [Contributing](#contributing)
